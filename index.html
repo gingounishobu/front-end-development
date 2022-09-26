@@ -2,108 +2,141 @@
 <html>
 
 <head>
-  <title>Trying out new stuff</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="HTML and CSS Fundamentals">
-  <meta name="author" content="Parker">
+    <title>Trying out new stuff</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML and CSS Fundamentals">
+    <meta name="author" content="Parker">
+    <link rel="icon" type="image/x-icon" href="html%2520website/favicon.ico" sizes="16x16">
+
 
 </head>
 <style>
-  table, th, td {
-  border: 1px solid black;
-}
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
 </style>
 
 <body>
 
-  <h1>Introduction to Front-end Development</h1>
+    <form action="script.php" method="post" name="demo_form" id="demo_form" enctype="multipart/form-data" target="_blank">
+    </form>
 
-  <p>A front-end developer architects and develops client part of websites and applications using web technologies
-    (languages):</p>
+    <input type="text" name="color" id="color" placeholder="enter color...">
 
-  <ul>
+    <input type="password" name="pass" id="pass">
 
-    <li style="color: red;">HTML</li>
+    <br><br>
 
-    <li style="color: green;">CSS</li>
 
-    <li style="color: blue;">JavaScript</li>
+    <input name="country" type="radio" id="Serbia" value="Serbia" checked="checked">
+    <label for="Serbia">Serbia</label>
 
-    <li>PHP1</li>
-
-  </ul>
-
-  <br>
-
-  <p dir="rtl">
-    .يولد جميع الناس أحرارًا متساوين في الكرامة والحقوق. وقد وهبوا عقلاً وضميرًا وعليهم أن يعامل بعضهم بعضًا بروح الإخاء
-  </p>
-
-  <!-- This is HTML comment. -->
-
-  <ol>
-    <li>nigredo</li>
-    <li>albedo</li>
-    <li>citrinitas</li>
-    <li>rubedo</li>
-  </ol>
-
-  <ul>
-    <li>nigredo
-      <ul>
-        <li>primo</li>
-        <li>secundo</li>
-      </ul>
-    </li>
-    <li>albedo</li>
-    <li>citrinitas</li>
-    <li>rubedo</li>
-  </ul>
-
-  <br><br>
-
-  <table style="width:100%">
-    <tr>
-      <th>*</th>
-      <th>monday</th>
-      <th>tuesday</th>
-      <th>wednesday</th>
-      <th>thursday</th>
-      <th>friday</th>
-    </tr>
-    <tr>
-      <th>mornings</th>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <th>evening</th>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    </table>
-    
     <br>
 
-    <tr style="width:100%">
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td colspan="2">4</td>
-      <td>6</td>
-    </tr>
+    <input name="country" type="radio" id="Romania" value="Romania">
+    <label for="Romania">Romania</label>
 
-  <br><br>
-  <span style="font-family: verdana, geneva, sans-serif;">În exemplul menționat, în mediul de lucru puteți face
-    modificările astfel încât veți adăuga mai multe titluri sau paragrafe.</span>
+    <br>
+
+    <input name="country" type="radio" id="Ukraine" value="Ukraine">
+    <label for="Ukraine">Ukraine</label>
+
+    <input name="country" type="radio" id="Romania" value="Romania" checked>
+
+    <br>
+
+
+    <input type="checkbox" name="question" value="Like" id="question">
+    <label for="question">I like HTML</label>
+    <input type="checkbox" name="question" value="Like" id="question" checked>
+    <input type="submit" value="Submit">
+
+    <br>
+
+    <input type="hidden" name="hiddenField" id="hiddenField" value="x">
+
+    <br>
+    <input type="number" name="quantity" min="1" max="5">
+
+    <br>
+
+    <input type="color" name="favcolor">
+
+    <br>
+
+    <input type="range" name="points" min="0" max="10">
+
+    <br>
+
+    <textarea name="description" id="description">Lorem ipsum dolor sit amet.</textarea>
+
+    <br>
+
+    <button type="button">
+        <img src="images/button.gif" alt="button" width="10" height="10">
+        Finish
+    </button>
+
+    <br>
+
+    <select name="country" id="country">
+        <option value="Serbia">Serbia</option>
+        <option value="Romania">Romania</option>
+        <option value="Ukraine" selected="Selected">Ukraine</option>
+    </select>
+
+    <br>
+
+    <select name="country" id="country" multiple="multiple">
+        <option value="Serbia">Serbia</option>
+        <option value="Romania" selected="selected">Romania</option>
+        <option value="Ukraine">Ukraine</option>
+    </select>
+
+    <br><br>
+
+    <select>
+        <optgroup label="Europe">
+            <option value="romania">Romania</option>
+            <option value="serbia">Serbia</option>
+            <option value="ukraine">Ukraine</option>
+        </optgroup>
+        <optgroup label="Asia">
+            <option value="chine">China</option>
+            <option value="india">India</option>
+        </optgroup>
+    </select>
+
+    <br><br><br>
+
+    <form action="script.php" method="post" name="demo_form">
+        <fieldset>
+            <legend>Personal info</legend>
+            <label for="name">First name:</label><br>
+            <input type="text" name="name" id="name"><br>
+
+            <label for="surname">Last name:</label><br>
+            <input type="text" name="surname" id="surname"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="text" name="phone" id="phone">
+        </fieldset>
+    </form>
+
+    <a href="http://www.google.com/" target="_blank" data-text="linkText">Link</a>
+    <a href="#subheading-1">Go to Subheading 1</a>
+
+    <br><br>
+
 
 </body>
 
