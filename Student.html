@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Constructor Homework</title>
+</head>
+
+<body>
+    <script>
+
+        class Student {
+            constructor(name, address, phone, course) {
+                this.name = name;
+                this.address = address;
+                this.phone = phone;
+                this.course = course;
+            };
+
+
+            getInfo() {
+                return "Name: " + this.name + "\n" +
+                    "Address: " + this.address + "\n" +
+                    "Phone: " + this.phone + "\n" +
+                    "Course: " + this.course + "\n"
+            }
+        };
+
+        var student1 = new Student("Josh Black", "4369 Timbercrest Road", "907-672-3448", "Geography");
+        var student2 = new Student("Andrew George", "2059 Johnson Street", "919-926-1036", "Math");
+        var student3 = new Student("Josephine Steward", "1630 Ottis Street", "405-348-4438", "History");
+
+        console.log(student1);
+        console.log(student2);
+        console.log(student3);
+
+    </script>
+
+</body>
+
+</html>
